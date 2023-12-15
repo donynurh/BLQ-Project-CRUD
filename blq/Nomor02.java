@@ -6,14 +6,14 @@ import java.util.concurrent.TimeUnit;
 public class Nomor02 {
     public static void main(String[] args) {
 
-        String startA = "28/02/2016";
-        String endA = "07/03/2016";
+        String peminjamanA = "28/02/2016";
+        String pengembalianA = "07/03/2016";
 
-        String startB = "29/04/2018";
-        String endB = "30/05/2018";
+        String peminjamanB = "29/04/2018";
+        String pengembalianB = "30/05/2018";
 
-        System.out.println("a. Total denda: " + hitungDenda(startA, endA));
-        System.out.println("b. Total denda: " + hitungDenda(startB, endB));
+        System.out.println("a. Total denda: " + hitungDenda(peminjamanA, pengembalianA));
+        System.out.println("b. Total denda: " + hitungDenda(peminjamanB, pengembalianB));
 
     }
 
@@ -25,10 +25,10 @@ public class Nomor02 {
         long selisih = 0, hari = 0;
 
         try {
-            Date dateDari = format.parse(a);
-            Date dateSampai = format.parse(b);
+            Date datePinjam = format.parse(a);
+            Date dateKembali = format.parse(b);
 
-            selisih = dateSampai.getTime() - dateDari.getTime();
+            selisih = dateKembali.getTime() - datePinjam.getTime();
             hari = TimeUnit.MILLISECONDS.toDays(selisih);
 
             System.out.println("Peminjaman: " + hari + " hari");
