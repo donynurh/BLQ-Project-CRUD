@@ -15,6 +15,7 @@ Project CRUD sederhana menggunakan springboot framework
 
 ### Features
 * Java
+* JavaScript
 * Springboot
 * Spring Data JPA
 * PostgreSQL
