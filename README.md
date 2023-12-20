@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-BLQ-Project-CRUD
+CRUD PROJECT
 </h1>
 
 ### Author : 
@@ -17,4 +17,4 @@ Project CRUD sederhana menggunakan springboot framework
 * Java
 * Springboot
 * Spring Data JPA
-* POstgreSQL
+* PostgreSQL
